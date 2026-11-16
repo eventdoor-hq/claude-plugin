@@ -1,0 +1,18 @@
+{
+  "name": "eventdoor",
+  "description": "Run an Eventdoor live-event streaming site from Claude: connects the Eventdoor MCP server and adds the skill that teaches Claude how Eventdoor works.",
+  "author": {
+    "name": "Eventdoor",
+    "url": "https://eventdoor.com"
+  },
+  "homepage": "https://docs.eventdoor.com/ai-assistants/claude-skill",
+  "repository": "https://github.com/eventdoor-hq/claude-plugin",
+  "privacyPolicyUrl": "https://eventdoor.com/privacy",
+  "keywords": [
+    "eventdoor",
+    "live-streaming",
+    "events",
+    "mcp"
+  ],
+  "license": "MIT"
+}

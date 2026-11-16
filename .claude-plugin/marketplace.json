@@ -1,0 +1,15 @@
+{
+  "name": "eventdoor",
+  "owner": {
+    "name": "Eventdoor",
+    "url": "https://eventdoor.com"
+  },
+  "description": "Eventdoor's plugin for Claude and Claude Code.",
+  "plugins": [
+    {
+      "name": "eventdoor",
+      "source": "./",
+      "description": "Run an Eventdoor live-event streaming site from Claude: connects the Eventdoor MCP server and adds the skill that teaches Claude how Eventdoor works."
+    }
+  ]
+}

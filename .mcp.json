@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "eventdoor": {
+      "type": "http",
+      "url": "https://mcp.eventdoor.com/eventdoor/api/v1/mcp",
+      "oauth": {
+        "clientId": "eventdoor-assistant",
+        "callbackPort": 43479
+      }
+    }
+  }
+}
