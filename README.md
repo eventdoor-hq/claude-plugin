@@ -26,6 +26,13 @@ claude plugin install eventdoor@eventdoor
 
 Then run `/mcp`, choose the Eventdoor server, and choose **Authenticate** to sign in.
 
+## What this plugin runs and sends
+
+- **Runs nothing on your computer.** The plugin is one skill (instructions in Markdown) and one connector setting. It has no scripts, hooks, commands or local servers.
+- **Connects to one server:** `https://mcp.eventdoor.com/eventdoor/api/v1/mcp`, over HTTPS, after you sign in with your Eventdoor account. Claude sends that server the tool calls it makes on your behalf, and nothing else.
+- **Acts only as you.** Claude can read and change only what your account can in the Eventdoor admin, within what your organization's assistant settings allow. Publishing and deleting wait for a person to approve them.
+- **Your conversation stays with Claude.** Eventdoor receives tool calls, not the chat, and logs them like any other request to its API. See the [privacy policy](https://eventdoor.com/privacy).
+
 ## Documentation
 
 Setup, what an assistant can do, and troubleshooting: [docs.eventdoor.com/ai-assistants](https://docs.eventdoor.com/ai-assistants).
