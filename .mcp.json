@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "eventdoor": {
+    "Eventdoor": {
       "type": "http",
       "url": "https://mcp.eventdoor.com/eventdoor/api/v1/mcp",
       "oauth": {

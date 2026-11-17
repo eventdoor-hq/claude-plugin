@@ -13,6 +13,15 @@ AI assistant access is in beta: the tools, what an assistant can read and change
 
 The first time you use an Eventdoor tool in a conversation, tell the user it is in beta and where to report problems. When a tool result carries a beta notice, include it in your answer.
 
+## When the Eventdoor tools aren't there
+
+If no Eventdoor tool is available in this chat (`list_platforms` is missing), the Eventdoor server isn't connected. Don't search other connectors or directories for it, and don't ask the user for a server address. Say it isn't connected, and how to connect it:
+
+- **Claude**, with the eventdoor plugin installed: open Customize, then Plugins, choose eventdoor, then its Connectors tab, and add Eventdoor. Under OAuth client, choose Use your own OAuth client with the client ID eventdoor-assistant and no secret, then sign in. Then start a new chat: one already open doesn't pick up the connection.
+- **Claude**, with this skill installed on its own: there is no Eventdoor connector yet. Add one as a custom connector, as the setup guide below says.
+- **Claude Code**: run `/mcp`, choose the Eventdoor server, then Authenticate. If it isn't listed, add it with the command in the setup guide.
+- Full setup, including connecting without the plugin: https://docs.eventdoor.com/ai-assistants/claude-skill
+
 ## How Eventdoor is organized
 
 - **Platform**: one customer's streaming service, for example a league's or a reseller's. One connection reaches every platform the person belongs to. Every tool except `list_platforms` acts on one platform, named in its `platform` argument; call `list_platforms` first when you don't know which one the user means, and ask when more than one could fit.

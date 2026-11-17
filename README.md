@@ -13,7 +13,9 @@ AI assistant access is in beta. To report a problem or share feedback, email sup
 
 1. Open **Customize**, then **Plugins**.
 2. Choose **Add**, then **Add marketplace**, and enter `eventdoor-hq/claude-plugin`.
-3. Install **eventdoor**, then connect the Eventdoor connector and sign in with your Eventdoor account.
+3. Install **eventdoor**.
+4. On the plugin's **Connectors** tab, add the **Eventdoor** connector. Under **OAuth client**, choose **Use your own OAuth client**, enter the client ID `eventdoor-assistant`, and leave the client secret blank.
+5. Sign in with your Eventdoor account.
 
 ### Claude Code
 
